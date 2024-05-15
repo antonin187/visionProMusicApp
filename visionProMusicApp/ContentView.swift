@@ -11,16 +11,33 @@ import RealityKitContent
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Model3D(named: "Scene", bundle: realityKitContentBundle)
-                .padding(.bottom, 50)
-
-            Text("Hello, world!")
+        TabView {
+            NavigationSplitView {
+                // Side Menu
+                SideBarView()
+            } detail: {
+                // Album View
+                AlbumsView()
+            }.tabItem {
+                Label("Browse", systemImage: "music.note")
+            }.tag(0)
+            
+            Text("Favorite")
+                .tabItem {
+                    Label("Favorite", systemImage: "heart.fill")
+                }.tag(1)
+            
+            Text("Playlist")
+                .tabItem {
+                    Label("Playlist", systemImage: "play.square.stack")
+                }.tag(1)
         }
-        .padding()
     }
 }
 
 #Preview(windowStyle: .automatic) {
-    ContentView()
+    NavigationStack {
+        ContentView()
+    }
 }
+

@@ -12,6 +12,10 @@
 		CE03CB772BF51C33003F31D6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE03CB762BF51C33003F31D6 /* ContentView.swift */; };
 		CE03CB792BF51C35003F31D6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE03CB782BF51C35003F31D6 /* Assets.xcassets */; };
 		CE03CB7C2BF51C35003F31D6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE03CB7B2BF51C35003F31D6 /* Preview Assets.xcassets */; };
+		CE03CB852BF5201F003F31D6 /* SideMenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE03CB842BF5201F003F31D6 /* SideMenuItem.swift */; };
+		CE03CB882BF521C6003F31D6 /* SideBarViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE03CB872BF521C6003F31D6 /* SideBarViews.swift */; };
+		CE03CB8A2BF52349003F31D6 /* Album.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE03CB892BF52349003F31D6 /* Album.swift */; };
+		CEB0FEC02BF575B100D44C8E /* AlbumsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB0FEBF2BF575B100D44C8E /* AlbumsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +26,10 @@
 		CE03CB782BF51C35003F31D6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE03CB7B2BF51C35003F31D6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		CE03CB7D2BF51C35003F31D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE03CB842BF5201F003F31D6 /* SideMenuItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuItem.swift; sourceTree = "<group>"; };
+		CE03CB872BF521C6003F31D6 /* SideBarViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideBarViews.swift; sourceTree = "<group>"; };
+		CE03CB892BF52349003F31D6 /* Album.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Album.swift; sourceTree = "<group>"; };
+		CEB0FEBF2BF575B100D44C8E /* AlbumsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +47,8 @@
 		CE03CB642BF51C33003F31D6 = {
 			isa = PBXGroup;
 			children = (
+				CE03CB862BF521B3003F31D6 /* Views */,
+				CE03CB832BF52001003F31D6 /* Models */,
 				CE03CB6F2BF51C33003F31D6 /* visionProMusicApp */,
 				CE03CB702BF51C33003F31D6 /* Packages */,
 				CE03CB6E2BF51C33003F31D6 /* Products */,
@@ -79,6 +89,24 @@
 				CE03CB7B2BF51C35003F31D6 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		CE03CB832BF52001003F31D6 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CE03CB842BF5201F003F31D6 /* SideMenuItem.swift */,
+				CE03CB892BF52349003F31D6 /* Album.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		CE03CB862BF521B3003F31D6 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CE03CB872BF521C6003F31D6 /* SideBarViews.swift */,
+				CEB0FEBF2BF575B100D44C8E /* AlbumsView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -155,7 +183,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE03CB772BF51C33003F31D6 /* ContentView.swift in Sources */,
+				CE03CB882BF521C6003F31D6 /* SideBarViews.swift in Sources */,
+				CEB0FEC02BF575B100D44C8E /* AlbumsView.swift in Sources */,
 				CE03CB752BF51C33003F31D6 /* visionProMusicAppApp.swift in Sources */,
+				CE03CB852BF5201F003F31D6 /* SideMenuItem.swift in Sources */,
+				CE03CB8A2BF52349003F31D6 /* Album.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
