@@ -10,6 +10,9 @@ import RealityKit
 import RealityKitContent
 
 struct ContentView: View {
+    
+    
+    
     var body: some View {
         TabView {
             NavigationSplitView {
@@ -30,7 +33,7 @@ struct ContentView: View {
             Text("Playlist")
                 .tabItem {
                     Label("Playlist", systemImage: "play.square.stack")
-                }.tag(1)
+                }.tag(2)
         }
     }
 }

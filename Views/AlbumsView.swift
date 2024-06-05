@@ -30,7 +30,7 @@ struct AlbumsView: View {
                             
                             Text(album.title)
                                 .lineLimit(1)
-                            Text(album.subTitle)
+                            Text(album.artist.name)
                                 .foregroundStyle(.tertiary)
                                 .lineLimit(1)
                         }.hoverEffect()
@@ -113,3 +113,8 @@ struct PlayingSongCardView: View {
     }
 }
 
+#Preview(windowStyle: .automatic) {
+    NavigationStack {
+        AlbumsView()
+    }
+}
