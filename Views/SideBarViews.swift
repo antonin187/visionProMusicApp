@@ -15,6 +15,21 @@ struct SideBarView: View {
                     .foregroundStyle(.primary)
             }.navigationDestination(for: SideMenuItem.self) { item in
                 // Menu Item View
+                switch item.name {
+                case "Recently Added":
+                    Text("Recently Added")
+                case "Artists":
+                    ArtistsView()
+                case "Albums":
+                    AlbumsView()
+                case "Songs":
+                    SongsView()
+                case "Made For You":
+                    Text("Made For You")
+                default:
+                    Text("Recently Added")
+                    
+                }
             }
         }.toolbar {
             ToolbarItem(placement: .topBarLeading) {

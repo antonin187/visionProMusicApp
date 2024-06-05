@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE036F3B2BF5F82500F436E1 /* ArtistsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE036F3A2BF5F82500F436E1 /* ArtistsView.swift */; };
+		CE036F3D2BF5FC8000F436E1 /* Artist.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE036F3C2BF5FC8000F436E1 /* Artist.swift */; };
+		CE036F3F2BF6026000F436E1 /* SongsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE036F3E2BF6026000F436E1 /* SongsView.swift */; };
+		CE036F412BF6029700F436E1 /* Song.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE036F402BF6029700F436E1 /* Song.swift */; };
 		CE03CB732BF51C33003F31D6 /* RealityKitContent in Frameworks */ = {isa = PBXBuildFile; productRef = CE03CB722BF51C33003F31D6 /* RealityKitContent */; };
 		CE03CB752BF51C33003F31D6 /* visionProMusicAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE03CB742BF51C33003F31D6 /* visionProMusicAppApp.swift */; };
 		CE03CB772BF51C33003F31D6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE03CB762BF51C33003F31D6 /* ContentView.swift */; };
@@ -15,10 +19,19 @@
 		CE03CB852BF5201F003F31D6 /* SideMenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE03CB842BF5201F003F31D6 /* SideMenuItem.swift */; };
 		CE03CB882BF521C6003F31D6 /* SideBarViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE03CB872BF521C6003F31D6 /* SideBarViews.swift */; };
 		CE03CB8A2BF52349003F31D6 /* Album.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE03CB892BF52349003F31D6 /* Album.swift */; };
+		CE3FC4012C0FDC0E009F1117 /* Igor's Theme.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CE3FC3FD2C0FDC0E009F1117 /* Igor's Theme.mp3 */; };
+		CE3FC4022C0FDC0E009F1117 /* New Magic Wand.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CE3FC3FE2C0FDC0E009F1117 /* New Magic Wand.mp3 */; };
+		CE3FC4032C0FDC0E009F1117 /* Puppet .mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CE3FC3FF2C0FDC0E009F1117 /* Puppet .mp3 */; };
+		CE3FC4042C0FDC0E009F1117 /* What's Good.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CE3FC4002C0FDC0E009F1117 /* What's Good.mp3 */; };
 		CEB0FEC02BF575B100D44C8E /* AlbumsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB0FEBF2BF575B100D44C8E /* AlbumsView.swift */; };
+		CEC3B0A32BF8F17000FBDE54 /* SongCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC3B0A22BF8F17000FBDE54 /* SongCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CE036F3A2BF5F82500F436E1 /* ArtistsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistsView.swift; sourceTree = "<group>"; };
+		CE036F3C2BF5FC8000F436E1 /* Artist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Artist.swift; sourceTree = "<group>"; };
+		CE036F3E2BF6026000F436E1 /* SongsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongsView.swift; sourceTree = "<group>"; };
+		CE036F402BF6029700F436E1 /* Song.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Song.swift; sourceTree = "<group>"; };
 		CE03CB6D2BF51C33003F31D6 /* visionProMusicApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = visionProMusicApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE03CB712BF51C33003F31D6 /* RealityKitContent */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = RealityKitContent; sourceTree = "<group>"; };
 		CE03CB742BF51C33003F31D6 /* visionProMusicAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = visionProMusicAppApp.swift; sourceTree = "<group>"; };
@@ -29,7 +42,12 @@
 		CE03CB842BF5201F003F31D6 /* SideMenuItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuItem.swift; sourceTree = "<group>"; };
 		CE03CB872BF521C6003F31D6 /* SideBarViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideBarViews.swift; sourceTree = "<group>"; };
 		CE03CB892BF52349003F31D6 /* Album.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Album.swift; sourceTree = "<group>"; };
+		CE3FC3FD2C0FDC0E009F1117 /* Igor's Theme.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "Igor's Theme.mp3"; path = "../../../../../Downloads/Igor's Theme.mp3"; sourceTree = "<group>"; };
+		CE3FC3FE2C0FDC0E009F1117 /* New Magic Wand.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "New Magic Wand.mp3"; path = "../../../../../Downloads/New Magic Wand.mp3"; sourceTree = "<group>"; };
+		CE3FC3FF2C0FDC0E009F1117 /* Puppet .mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "Puppet .mp3"; path = "../../../../../Downloads/Puppet .mp3"; sourceTree = "<group>"; };
+		CE3FC4002C0FDC0E009F1117 /* What's Good.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "What's Good.mp3"; path = "../../../../../Downloads/What's Good.mp3"; sourceTree = "<group>"; };
 		CEB0FEBF2BF575B100D44C8E /* AlbumsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumsView.swift; sourceTree = "<group>"; };
+		CEC3B0A22BF8F17000FBDE54 /* SongCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +65,8 @@
 		CE03CB642BF51C33003F31D6 = {
 			isa = PBXGroup;
 			children = (
+				CE3FC3FC2C0FDBF5009F1117 /* AudioPlayer */,
+				CEC3B0A12BF8F15C00FBDE54 /* Components */,
 				CE03CB862BF521B3003F31D6 /* Views */,
 				CE03CB832BF52001003F31D6 /* Models */,
 				CE03CB6F2BF51C33003F31D6 /* visionProMusicApp */,
@@ -96,6 +116,8 @@
 			children = (
 				CE03CB842BF5201F003F31D6 /* SideMenuItem.swift */,
 				CE03CB892BF52349003F31D6 /* Album.swift */,
+				CE036F3C2BF5FC8000F436E1 /* Artist.swift */,
+				CE036F402BF6029700F436E1 /* Song.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -105,8 +127,29 @@
 			children = (
 				CE03CB872BF521C6003F31D6 /* SideBarViews.swift */,
 				CEB0FEBF2BF575B100D44C8E /* AlbumsView.swift */,
+				CE036F3A2BF5F82500F436E1 /* ArtistsView.swift */,
+				CE036F3E2BF6026000F436E1 /* SongsView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		CE3FC3FC2C0FDBF5009F1117 /* AudioPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				CE3FC3FD2C0FDC0E009F1117 /* Igor's Theme.mp3 */,
+				CE3FC3FF2C0FDC0E009F1117 /* Puppet .mp3 */,
+				CE3FC3FE2C0FDC0E009F1117 /* New Magic Wand.mp3 */,
+				CE3FC4002C0FDC0E009F1117 /* What's Good.mp3 */,
+			);
+			path = AudioPlayer;
+			sourceTree = "<group>";
+		};
+		CEC3B0A12BF8F15C00FBDE54 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				CEC3B0A22BF8F17000FBDE54 /* SongCell.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -170,8 +213,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE3FC4032C0FDC0E009F1117 /* Puppet .mp3 in Resources */,
 				CE03CB7C2BF51C35003F31D6 /* Preview Assets.xcassets in Resources */,
+				CE3FC4042C0FDC0E009F1117 /* What's Good.mp3 in Resources */,
+				CE3FC4022C0FDC0E009F1117 /* New Magic Wand.mp3 in Resources */,
 				CE03CB792BF51C35003F31D6 /* Assets.xcassets in Resources */,
+				CE3FC4012C0FDC0E009F1117 /* Igor's Theme.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -183,10 +230,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE03CB772BF51C33003F31D6 /* ContentView.swift in Sources */,
+				CEC3B0A32BF8F17000FBDE54 /* SongCell.swift in Sources */,
+				CE036F3B2BF5F82500F436E1 /* ArtistsView.swift in Sources */,
 				CE03CB882BF521C6003F31D6 /* SideBarViews.swift in Sources */,
 				CEB0FEC02BF575B100D44C8E /* AlbumsView.swift in Sources */,
+				CE036F412BF6029700F436E1 /* Song.swift in Sources */,
+				CE036F3F2BF6026000F436E1 /* SongsView.swift in Sources */,
 				CE03CB752BF51C33003F31D6 /* visionProMusicAppApp.swift in Sources */,
 				CE03CB852BF5201F003F31D6 /* SideMenuItem.swift in Sources */,
+				CE036F3D2BF5FC8000F436E1 /* Artist.swift in Sources */,
 				CE03CB8A2BF52349003F31D6 /* Album.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

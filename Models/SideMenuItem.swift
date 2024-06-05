@@ -18,5 +18,8 @@ let sideMenuItems: [SideMenuItem] = [
     SideMenuItem(name: "Artists", icon: "music.mic"),
     SideMenuItem(name: "Albums", icon: "square.stack"),
     SideMenuItem(name: "Songs", icon: "music.note"),
-    SideMenuItem(name: "Made For You", icon: "person.crop.square")
+    SideMenuItem(name: "Genres", icon: "guitars"),
+    SideMenuItem(name: "Composers", icon: "music.quarternote.3"),
+    SideMenuItem(name: "Downloaded Music", icon: "arrow.down.circle"),
+//    SideMenuItem(name: "Made For You", icon: "person.crop.square")
 ]
