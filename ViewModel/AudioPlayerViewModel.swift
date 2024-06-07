@@ -11,11 +11,11 @@ import AVFoundation
 class AudioPlayerViewModel: ObservableObject {
     static let shared = AudioPlayerViewModel()
     var audioPlayer: AVAudioPlayer?
-    var currentMusic = ""
+    var currentSong: Song = songs[Int.random(in: 1..<songs.count)]
     @Published var isPlaying = false
 
     private init() {
-        if let sound = Bundle.main.path(forResource: self.getCurrentMusic(), ofType: "mp3") {
+        if let sound = Bundle.main.path(forResource: getCurrentSong().title, ofType: "mp3") {
         do {
             self.audioPlayer = try AVAudioPlayer(contentsOf: URL(fileURLWithPath: sound))
         } catch {
@@ -26,21 +26,22 @@ class AudioPlayerViewModel: ObservableObject {
         }
     }
     
-    func getCurrentMusic() -> String {
-        return self.currentMusic
+    func getCurrentSong() -> Song {
+        return self.currentSong
     }
     
-    func setCurrentMusic(musicName: String) {
-        self.currentMusic = musicName
+    func setCurrentSong(song: Song) {
+        self.currentSong = song
     }
     
-    func playNewMusic(musicName: String) {
-        self.setCurrentMusic(musicName: musicName)
+    func playNewSong(song: Song) {
+        self.setCurrentSong(song: song)
         // Update the audio player with the new music file
-        if let sound = Bundle.main.path(forResource: musicName, ofType: "mp3") {
+        if let sound = Bundle.main.path(forResource: getCurrentSong().title, ofType: "mp3") {
             do {
                 self.audioPlayer = try AVAudioPlayer(contentsOf: URL(fileURLWithPath: sound))
                 self.audioPlayer?.prepareToPlay()
+                playMusic()
             } catch {
                 print("AVAudioPlayer could not be instantiated.")
             }
@@ -71,5 +72,40 @@ class AudioPlayerViewModel: ObservableObject {
     guard let player = audioPlayer else { return }
         player.pause()
         isPlaying = false
+    }
+    
+    func playNextMusic() {
+        if let index = songs.firstIndex(of: getCurrentSong()) {
+            var indexToPlay = 0
+            if index < songs.count - 1 {
+                indexToPlay = index + 1
+            }
+            playNewSong(song: songs[indexToPlay])
+        } else {
+            playNewSong(song: songs[Int.random(in: 1..<songs.count)])
+        }
+    }
+    
+    func replayMusic() {
+        if let index = songs.firstIndex(of: getCurrentSong()) {
+            playNewSong(song: songs[index])
+        } else {
+            playNewSong(song: songs[Int.random(in: 1..<songs.count)])
+        }
+    }
+    
+    func playPreviousMusic() {
+        if let index = songs.firstIndex(of: getCurrentSong()) {
+            var indexToPlay = 0
+            if index == 0 {
+                indexToPlay = songs.count - 1
+            } else {
+                indexToPlay = index - 1
+            }
+            print(songs.count)
+            playNewSong(song: songs[indexToPlay])
+        } else {
+            playNewSong(song: songs[Int.random(in: 1..<songs.count)])
+        }
     }
 }

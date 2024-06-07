@@ -41,9 +41,7 @@ struct SongCell: View {
             // Dots
         }.onTapGesture {
             audioPlayerViewModel.stopMusic()
-            audioPlayerViewModel.playNewMusic(musicName: song.title)
-            print(audioPlayerViewModel.getCurrentMusic())
-            audioPlayerViewModel.playMusic()
+            audioPlayerViewModel.playNewSong(song: song)
         }
     }
     

@@ -7,7 +7,14 @@
 
 import Foundation
 
-struct Song: Identifiable {
+struct Song: Identifiable, Equatable {
+    static func == (lhs: Song, rhs: Song) -> Bool {
+        return lhs.id == rhs.id &&
+               lhs.title == rhs.title &&
+               lhs.album == rhs.album &&
+               lhs.featurings == rhs.featurings
+    }
+    
     var id = UUID()
     var title: String
     var album: Album
