@@ -8,7 +8,7 @@
 import Foundation
 
 
-struct Artist: Identifiable {
+struct Artist: Identifiable, Equatable {
     var id = UUID()
     var name: String
     var image: String?

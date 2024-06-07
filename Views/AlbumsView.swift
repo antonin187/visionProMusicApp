@@ -66,58 +66,14 @@ struct AlbumsView: View {
                 }).buttonBorderShape(.circle)
             }
         }
-        .toolbar {
-            ToolbarItemGroup(placement: .bottomOrnament) {
-                HStack {
-                    Button {} label: {
-                        Image(systemName: "backward.fill")
-                    }
-                    
-                    Button {
-                        audioPlayerViewModel.isPlaying.toggle()
-                        audioPlayerViewModel.setCurrentMusic(musicName: "What's Good")
-                        audioPlayerViewModel.playOrPause()
-                    } label: {
-                        Image(systemName: audioPlayerViewModel.isPlaying ? "pause.fill" : "play.fill")
-                    }
-                    
-                    Button {} label: {
-                        Image(systemName: "forward.fill")
-                    }
-                    
-                    PlayingSongCardView()
-                    
-                    Button {} label: {
-                        Image(systemName: "quote.bubble")
-                    }
-                    
-                    Button {} label: {
-                        Image(systemName: "list.bullet")
-                    }
-                    
-                    VolumeSlider(
-                            sliderProgress: $volume,
-                            symbol: .init(
-                                icon: "speaker.wave.3.fill",
-                                tint: .gray,
-                                font: .system(size: 15),
-                                padding: 20
-                            ),
-                            axis: .horizontal,
-                            tint: .white
-                    )
-                    .frame(width: 220, height: 30)
-                    .frame(maxHeight: .infinity)
-                }
-            }
-        }
     }
 }
 
 struct PlayingSongCardView: View {
+    @EnvironmentObject var audioPlayerViewModel: AudioPlayerViewModel
     var body: some View {
         HStack {
-            AsyncImage(url: URL(string: "https://i.postimg.cc/mg1vYcbN/IGOR.jpg")) { image in
+            AsyncImage(url: URL(string: audioPlayerViewModel.getCurrentSong().album.image)) { image in
                 image.resizable()
             } placeholder: {
                 Rectangle().foregroundStyle(.tertiary)
@@ -125,8 +81,8 @@ struct PlayingSongCardView: View {
                 .clipShape(RoundedRectangle(cornerRadius: 6))
             
             VStack (alignment: .leading) {
-                Text("IGOR")
-                Text("Tyler, The Creator")
+                Text(audioPlayerViewModel.getCurrentSong().title)
+                Text(audioPlayerViewModel.getCurrentSong().album.artist.name)
                     .font(.caption2)
                     .foregroundStyle(.tertiary)
             }.frame(width: 160, alignment: .leading)
