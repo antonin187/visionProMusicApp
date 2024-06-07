@@ -9,9 +9,11 @@ import SwiftUI
 
 @main
 struct visionProMusicAppApp: App {
+    var audioPlayerViewModel = AudioPlayerViewModel.shared
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environmentObject(audioPlayerViewModel)
         }
     }
 }
