@@ -11,6 +11,7 @@ import RealityKitContent
 
 struct ContentView: View {
     @State private var volume: CGFloat = 0.7
+    @State private var isShowingSheet = false
     @EnvironmentObject var audioPlayerViewModel: AudioPlayerViewModel
     var body: some View {
         TabView {
@@ -64,7 +65,14 @@ struct ContentView: View {
                         Image(systemName: "forward.fill")
                     }
                     
-                    PlayingSongCardView()
+                        
+                    Button(action: {
+                        isShowingSheet = true
+                    }) {
+                        PlayingSongCardView()
+                    }.sheet(isPresented: $isShowingSheet, content: {
+                        Text("Hello")
+                    })
                     
                     Button {} label: {
                         Image(systemName: "quote.bubble")
