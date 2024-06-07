@@ -9,8 +9,19 @@ import SwiftUI
 
 struct AlbumsView: View {
     @State private var searchText: String = ""
-    @State private var isPlaying = false
+    
+    var filteredAlbums: [Album] {
+        if searchText.isEmpty {
+            return albums
+        } else {
+            return albums.filter { $0.title.localizedCaseInsensitiveContains(searchText)
+                || $0.artist.name.localizedCaseInsensitiveContains(searchText)
+            }
+        }
+    }
+    
     @EnvironmentObject var audioPlayerViewModel: AudioPlayerViewModel
+  
     let columns: [GridItem] = [GridItem(.adaptive(minimum: 160, maximum: 200))]
     var body: some View {
         ScrollView {
@@ -19,7 +30,7 @@ struct AlbumsView: View {
                 .padding(.bottom)
             
             LazyVGrid(columns: columns, spacing: 24) {
-                ForEach(albums) { album in
+                ForEach(filteredAlbums) { album in
                     Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/) {
                         VStack (alignment: .leading) {
                             AsyncImage(url: URL(string: album.image)) { image in
