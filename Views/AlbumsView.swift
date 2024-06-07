@@ -9,8 +9,19 @@ import SwiftUI
 
 struct AlbumsView: View {
     @State private var searchText: String = ""
-    @State private var isPlaying = false
+    
+    var filteredAlbums: [Album] {
+        if searchText.isEmpty {
+            return albums
+        } else {
+            return albums.filter { $0.title.localizedCaseInsensitiveContains(searchText)
+                || $0.artist.name.localizedCaseInsensitiveContains(searchText)
+            }
+        }
+    }
+    
     @EnvironmentObject var audioPlayerViewModel: AudioPlayerViewModel
+  
     let columns: [GridItem] = [GridItem(.adaptive(minimum: 160, maximum: 200))]
     var body: some View {
         ScrollView {
@@ -19,7 +30,7 @@ struct AlbumsView: View {
                 .padding(.bottom)
             
             LazyVGrid(columns: columns, spacing: 24) {
-                ForEach(albums) { album in
+                ForEach(filteredAlbums) { album in
                     Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/) {
                         VStack (alignment: .leading) {
                             AsyncImage(url: URL(string: album.image)) { image in
@@ -84,9 +95,19 @@ struct AlbumsView: View {
                         Image(systemName: "list.bullet")
                     }
                     
-                    Button {} label: {
-                        Image(systemName: "speaker.wave.3.fill")
-                    }
+                    VolumeSlider(
+                            sliderProgress: $volume,
+                            symbol: .init(
+                                icon: "speaker.wave.3.fill",
+                                tint: .gray,
+                                font: .system(size: 15),
+                                padding: 20
+                            ),
+                            axis: .horizontal,
+                            tint: .white
+                    )
+                    .frame(width: 220, height: 30)
+                    .frame(maxHeight: .infinity)
                 }
             }
         }
