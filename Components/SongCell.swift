@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct SongCell: View {
+    @EnvironmentObject var audioPlayerViewModel: AudioPlayerViewModel
     var song: Song
     var body: some View {
         HStack {
@@ -38,6 +39,11 @@ struct SongCell: View {
             Image(systemName: "ellipsis")
                 .padding(.horizontal, 2)
             // Dots
+        }.onTapGesture {
+            audioPlayerViewModel.stopMusic()
+            audioPlayerViewModel.playNewMusic(musicName: song.title)
+            print(audioPlayerViewModel.getCurrentMusic())
+            audioPlayerViewModel.playMusic()
         }
     }
     

@@ -11,8 +11,23 @@ struct SongsView: View {
     var body: some View {
         List(songs) { song in
             SongCell(song: song)
-                .listRowSeparator(.visible, edges: .top)
+                .listRowSeparator(.automatic)
         }.listStyle(.plain)
+            .toolbar {
+            ToolbarItemGroup(placement: .topBarLeading) {
+                VStack (alignment: .leading) {
+                    Text("Songs")
+                        .font(.largeTitle)
+                    Text("\(songs.count) songs")
+                        .foregroundStyle(.tertiary)
+                }
+            }
+            ToolbarItem {
+                Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
+                    Image(systemName: "line.3.horizontal.decrease")
+                }).buttonBorderShape(.circle)
+            }
+        }
     }
 }
 

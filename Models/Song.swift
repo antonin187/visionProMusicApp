@@ -19,8 +19,8 @@ let songs: [Song] = [
     Song(title: "Martin Eden", album: albums[0], featurings: []),
     Song(title: "Le horla", album: albums[0], featurings: []),
     Song(title: "Egérie", album: albums[0], featurings: []),
-    Song(title: "Ma dope", album: albums[0], featurings: []),
-    Song(title: "Princesse", album: albums[0], featurings: []),
+    Song(title: "Ma dope", album: albums[0], featurings: [featuringArtists[3]]),
+    Song(title: "Princesse", album: albums[0], featurings: [featuringArtists[2]]),
     
     
     Song(title: "IGOR'S THEME", album: albums[1], featurings: []),
@@ -42,7 +42,7 @@ let songs: [Song] = [
     Song(title: "Within", album: albums[3], featurings: []),
     Song(title: "Get Lucky", album: albums[3], featurings: [featuringArtists[0], featuringArtists[1]]),
     Song(title: "Beyond", album: albums[3], featurings: []),
-    Song(title: "Motherbàard", album: albums[3], featurings: []),
+    Song(title: "Motherboard", album: albums[3], featurings: []),
     
     
     Song(title: "Thriller", album: albums[4], featurings: []),

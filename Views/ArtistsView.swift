@@ -32,7 +32,8 @@ struct ArtistsView: View {
                                 .font(.title2)
                                 .fontWeight(.medium)
                                 .lineLimit(1)
-                        }.hoverEffect()
+                        }
+                        .hoverEffect()
                     }.buttonStyle(.plain)
                 }
             }
@@ -40,9 +41,9 @@ struct ArtistsView: View {
         .toolbar {
             ToolbarItemGroup(placement: .topBarLeading) {
                 VStack (alignment: .leading) {
-                    Text("Albums")
+                    Text("Artists")
                         .font(.largeTitle)
-                    Text("48 songs")
+                    Text("\(artists.count) artists")
                         .foregroundStyle(.tertiary)
                 }
             }
