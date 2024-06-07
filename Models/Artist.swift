@@ -27,4 +27,6 @@ let artists: [Artist] = [
 let featuringArtists: [Artist] = [
     Artist(name: "Pharell Williams"),
     Artist(name: "Nile Rodgers"),
+    Artist(name: "Nemir"),
+    Artist(name: "S.Pri Noir"),
 ]

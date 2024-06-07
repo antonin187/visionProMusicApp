@@ -9,7 +9,6 @@ import SwiftUI
 
 struct AlbumsView: View {
     @State private var searchText: String = ""
-    @State private var volume: CGFloat = 0.7
     
     var filteredAlbums: [Album] {
         if searchText.isEmpty {
@@ -21,6 +20,8 @@ struct AlbumsView: View {
         }
     }
     
+    @EnvironmentObject var audioPlayerViewModel: AudioPlayerViewModel
+  
     let columns: [GridItem] = [GridItem(.adaptive(minimum: 160, maximum: 200))]
     var body: some View {
         ScrollView {
@@ -55,7 +56,7 @@ struct AlbumsView: View {
                 VStack (alignment: .leading) {
                     Text("Albums")
                         .font(.largeTitle)
-                    Text("48 songs")
+                    Text("\(albums.count) albums")
                         .foregroundStyle(.tertiary)
                 }
             }
@@ -72,8 +73,12 @@ struct AlbumsView: View {
                         Image(systemName: "backward.fill")
                     }
                     
-                    Button {} label: {
-                        Image(systemName: "pause.fill")
+                    Button {
+                        audioPlayerViewModel.isPlaying.toggle()
+                        audioPlayerViewModel.setCurrentMusic(musicName: "What's Good")
+                        audioPlayerViewModel.playOrPause()
+                    } label: {
+                        Image(systemName: audioPlayerViewModel.isPlaying ? "pause.fill" : "play.fill")
                     }
                     
                     Button {} label: {
