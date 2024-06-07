@@ -10,7 +10,7 @@ import SwiftUI
 struct AlbumsView: View {
     @State private var searchText: String = ""
     @State private var isPlaying = false
-    @StateObject var audioPlayerViewModel = AudioPlayerViewModel.shared
+    @EnvironmentObject var audioPlayerViewModel: AudioPlayerViewModel
     let columns: [GridItem] = [GridItem(.adaptive(minimum: 160, maximum: 200))]
     var body: some View {
         ScrollView {
