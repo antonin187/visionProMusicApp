@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct SideBarView: View {
+    @State private var showingAlert = false
+    
     var body: some View {
         List (sideMenuItems) { item in
             NavigationLink(value: item) {
@@ -27,7 +29,7 @@ struct SideBarView: View {
                 case "Made For You":
                     Text("Made For You")
                 default:
-                    Text("Recently Added")
+                    Text("Coming Soon!")
                     
                 }
             }
@@ -41,10 +43,24 @@ struct SideBarView: View {
                 }
             }
             ToolbarItem {
-                Button(action: {}, label: {
-                    Image(systemName: "ellipsis")
-                }).buttonBorderShape(.circle)
+                Menu {
+                    Button {
+                        showingAlert = true
+                    } label: {
+                        Label("J'aime l'application", systemImage: "heart.fill")
+                    }
+                } label: {
+                    Label("Add New", systemImage: "ellipsis")
+                }
             }
+        }.alert("Antonin et Maxime te remercient !", isPresented: $showingAlert) {
+            Button("Avec plaisir", role: .cancel) { }
         }
+    }
+}
+
+#Preview(windowStyle: .automatic) {
+    NavigationStack {
+        SideBarView()
     }
 }

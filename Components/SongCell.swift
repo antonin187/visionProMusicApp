@@ -8,38 +8,48 @@
 import SwiftUI
 
 struct SongCell: View {
+    @EnvironmentObject var audioPlayerViewModel: AudioPlayerViewModel
     var song: Song
     var body: some View {
-        HStack {
-            // Picture
-            AsyncImage(url: URL(string: song.album.image)) { image in
-                image.resizable()
-            } placeholder: {
-                Rectangle().foregroundStyle(.tertiary)
-            }.aspectRatio(1, contentMode: .fill)
-                .scaledToFill()
-                .clipShape(RoundedRectangle(cornerRadius: 7))
-                .frame(width: 60, height: 60)
-            
-            // Infos
-            VStack (alignment: .leading) {
-                Text(song.title)
-                    .lineLimit(1)
-                Text(featuringBuilder(song: song))
-                    .foregroundStyle(.tertiary)
-                    .lineLimit(1)
-            }
-            
-            Spacer()
+            ZStack {
+                HStack {
+                    // Picture
+                    AsyncImage(url: URL(string: song.album.image)) { image in
+                        image.resizable()
+                    } placeholder: {
+                        Rectangle().foregroundStyle(.tertiary)
+                    }
+                    .aspectRatio(1, contentMode: .fill)
+                    .scaledToFill()
+                    .clipShape(RoundedRectangle(cornerRadius: 7))
+                    .frame(width: 60, height: 60)
 
-            // Dowloaded
-            Image(systemName: "arrow.down.circle.fill")
-                .padding(.horizontal, 2)
-            Image(systemName: "ellipsis")
-                .padding(.horizontal, 2)
-            // Dots
+                    // Infos
+                    VStack(alignment: .leading) {
+                        Text(song.title)
+                            .lineLimit(1)
+                        Text(featuringBuilder(song: song))
+                            .foregroundStyle(.tertiary)
+                            .lineLimit(1)
+                    }
+
+                    Spacer()
+
+                    // Downloaded
+                    Image(systemName: "arrow.down.circle.fill")
+                        .padding(.horizontal, 2)
+                    Image(systemName: "ellipsis")
+                        .padding(.horizontal, 2)
+                    // Dots
+                }
+                .background(Color.clear) // Ensure the whole HStack is tappable
+                .contentShape(Rectangle()) // Ensure the whole HStack is tappable
+            }
+            .onTapGesture {
+                audioPlayerViewModel.stopMusic()
+                audioPlayerViewModel.playNewSong(song: song)
+            }
         }
-    }
     
     func featuringBuilder(song: Song) -> String {
         var finalFeaturingchain = song.album.artist.name
