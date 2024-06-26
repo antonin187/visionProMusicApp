@@ -9,6 +9,7 @@ import SwiftUI
 
 struct AlbumsView: View {
     @State private var searchText: String = ""
+    @State var isPresentedSheet = false
     
     var filteredAlbums: [Album] {
         if searchText.isEmpty {
@@ -24,49 +25,64 @@ struct AlbumsView: View {
   
     let columns: [GridItem] = [GridItem(.adaptive(minimum: 160, maximum: 200))]
     var body: some View {
-        ScrollView {
-            TextField("Search in Albums", text: $searchText)
-                .textFieldStyle(.roundedBorder)
-                .padding(.bottom)
-            
-            LazyVGrid(columns: columns, spacing: 24) {
-                ForEach(filteredAlbums) { album in
-                    Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/) {
-                        VStack (alignment: .leading) {
-                            AsyncImage(url: URL(string: album.image)) { image in
-                                image.resizable()
-                            } placeholder: {
-                                Rectangle().foregroundStyle(.tertiary)
-                            }.aspectRatio(1, contentMode: .fill)
-                                .scaledToFill()
-                                .clipShape(RoundedRectangle(cornerRadius: 10))
-                            
-                            Text(album.title)
-                                .lineLimit(1)
-                            Text(album.artist.name)
-                                .foregroundStyle(.tertiary)
-                                .lineLimit(1)
-                        }.hoverEffect()
-                    }.buttonStyle(.plain)
+        NavigationStack {
+            ScrollView {
+                TextField("Search in Albums", text: $searchText)
+                    .textFieldStyle(.roundedBorder)
+                    .padding(.bottom)
+                
+                LazyVGrid(columns: columns, spacing: 24) {
+                    ForEach(filteredAlbums) { album in
+                        Button(action: {
+                            audioPlayerViewModel.setSelectedAlbum(album: album)
+                            isPresentedSheet = true
+                        }) {
+                            VStack (alignment: .leading) {
+                                AsyncImage(url: URL(string: album.image)) { image in
+                                    image.resizable()
+                                } placeholder: {
+                                    Rectangle().foregroundStyle(.tertiary)
+                                }.aspectRatio(1, contentMode: .fill)
+                                    .scaledToFill()
+                                    .clipShape(RoundedRectangle(cornerRadius: 10))
+                                
+                                Text(album.title)
+                                    .lineLimit(1)
+                                Text(album.artist.name)
+                                    .foregroundStyle(.tertiary)
+                                    .lineLimit(1)
+                            }.hoverEffect()
+                        }.buttonStyle(.plain)
+                            .padding(5)
+    //                        .sheet(item: $selectedAlbum, content: {
+    //                            SongsByAlbumView(isPresentedSheet: $isPresentedSheet, album: album)
+    //                        })
+                            .sheet(isPresented: $isPresentedSheet, content: {
+                                SongsByAlbumView(isPresentedSheet: $isPresentedSheet)
+                            })
+                    }
+                }
+                .padding(.bottom, 50)
+            }.padding(.horizontal, 24)
+            .toolbar {
+                ToolbarItemGroup(placement: .topBarLeading) {
+                    VStack (alignment: .leading) {
+                        Text("Albums")
+                            .font(.largeTitle)
+                        Text("\(albums.count) albums")
+                            .foregroundStyle(.tertiary)
+                    }
+                }
+                ToolbarItem {
+                    Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
+                        Image(systemName: "line.3.horizontal.decrease")
+                    }).buttonBorderShape(.circle)
                 }
             }
-        }.padding(.horizontal, 24)
-        .toolbar {
-            ToolbarItemGroup(placement: .topBarLeading) {
-                VStack (alignment: .leading) {
-                    Text("Albums")
-                        .font(.largeTitle)
-                    Text("\(albums.count) albums")
-                        .foregroundStyle(.tertiary)
-                }
-            }
-            ToolbarItem {
-                Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
-                    Image(systemName: "line.3.horizontal.decrease")
-                }).buttonBorderShape(.circle)
-            }
+
         }
     }
+    
 }
 
 struct PlayingSongCardView: View {

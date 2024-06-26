@@ -52,14 +52,44 @@ let songs: [Song] = [
     Song(title: "Motherboard", album: albums[3], featurings: []),
     
     
-    Song(title: "Thriller", album: albums[4], featurings: []),
-    Song(title: "Beat It", album: albums[4], featurings: []),
-    Song(title: "Billie Jean", album: albums[4], featurings: []),
-    Song(title: "Human Nature", album: albums[4], featurings: []),
-    Song(title: "P.Y.T. (Pretty Young Thing)", album: albums[4], featurings: []),
+    Song(title: "Thriller", album: albums[5], featurings: []),
+    Song(title: "Beat It", album: albums[5], featurings: []),
+    Song(title: "Billie Jean", album: albums[5], featurings: []),
+    Song(title: "Human Nature", album: albums[5], featurings: []),
+    Song(title: "P.Y.T. (Pretty Young Thing)", album: albums[5], featurings: []),
     
     
-    Song(title: "Rosana", album: albums[5], featurings: []),
-    Song(title: "Afraid of Love", album: albums[5], featurings: []),
-    Song(title: "Africa", album: albums[5], featurings: []),
+    Song(title: "Rosana", album: albums[6], featurings: []),
+    Song(title: "Afraid of Love", album: albums[6], featurings: []),
+    Song(title: "Africa", album: albums[6], featurings: []),
+    
+    
+    Song(title: "Humanoïde", album: albums[8], featurings: []),
+    Song(title: "Squa", album: albums[8], featurings: []),
+    Song(title: "Galatée", album: albums[8], featurings: []),
+    
+    
+    Song(title: "STRIP", album: albums[7], featurings: [featuringArtists[4]]),
+    Song(title: "REPLIC44", album: albums[7], featurings: [featuringArtists[4]]),
+    Song(title: "Le jour de la signature", album: albums[7], featurings: [featuringArtists[4]]),
+    
+    
+    Song(title: "Steppin' Out", album: albums[9], featurings: []),
+    Song(title: "Be My Lady", album: albums[9], featurings: []),
+    Song(title: "Get Down On It", album: albums[9], featurings: []),
+    
+    
+    Song(title: "One More Time", album: albums[4], featurings: []),
+    Song(title: "Aerodynamic", album: albums[4], featurings: []),
+    Song(title: "Digital Love", album: albums[4], featurings: []),
+    Song(title: "Harder, Better, Faster, Stronger", album: albums[4], featurings: []),
+    Song(title: "Voyager", album: albums[4], featurings: []),
+    Song(title: "Veridis Quo", album: albums[4], featurings: []),
+    
+    
+    Song(title: "Ta Fête", album: albums[10], featurings: []),
+    Song(title: "Papaoutai", album: albums[10], featurings: []),
+    Song(title: "Tous les mêmes", album: albums[10], featurings: []),
+    Song(title: "sommeil", album: albums[10], featurings: []),
+    Song(title: "merci", album: albums[10], featurings: []),
 ]

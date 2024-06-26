@@ -19,6 +19,27 @@
 		CE03CB852BF5201F003F31D6 /* SideMenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE03CB842BF5201F003F31D6 /* SideMenuItem.swift */; };
 		CE03CB882BF521C6003F31D6 /* SideBarViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE03CB872BF521C6003F31D6 /* SideBarViews.swift */; };
 		CE03CB8A2BF52349003F31D6 /* Album.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE03CB892BF52349003F31D6 /* Album.swift */; };
+		CE17E1D02C1E012000BCA39A /* AlbumsByArtistView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE17E1CF2C1E012000BCA39A /* AlbumsByArtistView.swift */; };
+		CE45305E2C2B889F0099FE5D /* merci.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CE45305D2C2B889F0099FE5D /* merci.mp3 */; };
+		CE4530612C2B88A90099FE5D /* Papaoutai.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CE4530602C2B88A90099FE5D /* Papaoutai.mp3 */; };
+		CE4530642C2B88AE0099FE5D /* sommeil.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CE4530632C2B88AE0099FE5D /* sommeil.mp3 */; };
+		CE4530672C2B88B10099FE5D /* Ta Fête.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CE4530662C2B88B10099FE5D /* Ta Fête.mp3 */; };
+		CE45306A2C2B88B70099FE5D /* Tous les mêmes.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CE4530692C2B88B70099FE5D /* Tous les mêmes.mp3 */; };
+		CE45306D2C2B88BC0099FE5D /* Aerodynamic.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CE45306C2C2B88BC0099FE5D /* Aerodynamic.mp3 */; };
+		CE4530702C2B88BF0099FE5D /* Digital Love.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CE45306F2C2B88BF0099FE5D /* Digital Love.mp3 */; };
+		CE4530732C2B88C60099FE5D /* Harder, Better, Faster, Stronger.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CE4530722C2B88C60099FE5D /* Harder, Better, Faster, Stronger.mp3 */; };
+		CE4530762C2B88C90099FE5D /* One More Time.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CE4530752C2B88C90099FE5D /* One More Time.mp3 */; };
+		CE4530792C2B88D00099FE5D /* Veridis Quo.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CE4530782C2B88D00099FE5D /* Veridis Quo.mp3 */; };
+		CE45307C2C2B88D30099FE5D /* Voyager.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CE45307B2C2B88D30099FE5D /* Voyager.mp3 */; };
+		CE45308D2C2B898F0099FE5D /* REPLIC44.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CE45308C2C2B898F0099FE5D /* REPLIC44.mp3 */; };
+		CE4530902C2B89920099FE5D /* Le jour de la signature.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CE45308F2C2B89920099FE5D /* Le jour de la signature.mp3 */; };
+		CE4530932C2B89950099FE5D /* STRIP.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CE4530922C2B89950099FE5D /* STRIP.mp3 */; };
+		CE4530962C2B899B0099FE5D /* Be My Lady.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CE4530952C2B899B0099FE5D /* Be My Lady.mp3 */; };
+		CE4530992C2B899E0099FE5D /* Get Down On It.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CE4530982C2B899E0099FE5D /* Get Down On It.mp3 */; };
+		CE45309C2C2B89A10099FE5D /* Steppin' Out.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CE45309B2C2B89A10099FE5D /* Steppin' Out.mp3 */; };
+		CE4530A52C2B89C40099FE5D /* Galatée.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CE4530A42C2B89C40099FE5D /* Galatée.mp3 */; };
+		CE4530A82C2B89C80099FE5D /* Humanoïde.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CE4530A72C2B89C80099FE5D /* Humanoïde.mp3 */; };
+		CE4530AB2C2B89CC0099FE5D /* Squa.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CE4530AA2C2B89CC0099FE5D /* Squa.mp3 */; };
 		CE5EEFD42C12ED7800E306B3 /* Afraid of Love.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CE5EEFD32C12ED7800E306B3 /* Afraid of Love.mp3 */; };
 		CE5EEFD72C12ED7C00E306B3 /* Africa.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CE5EEFD62C12ED7C00E306B3 /* Africa.mp3 */; };
 		CE5EEFDA2C12ED8000E306B3 /* Rosana.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CE5EEFD92C12ED8000E306B3 /* Rosana.mp3 */; };
@@ -37,6 +58,8 @@
 		CE5EF0072C12FED800E306B3 /* PUPPET.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CE5EF0062C12FED800E306B3 /* PUPPET.mp3 */; };
 		CE5EF00C2C12FEE000E306B3 /* WHAT'S GOOD.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CE5EF00B2C12FEE000E306B3 /* WHAT'S GOOD.mp3 */; };
 		CE5EF00E2C130BB800E306B3 /* VolumeSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5EF00D2C130BB800E306B3 /* VolumeSlider.swift */; };
+		CE5EF0102C1353DD00E306B3 /* SongPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5EF00F2C1353DD00E306B3 /* SongPlayerView.swift */; };
+		CE5EF0132C13640900E306B3 /* SwiftImage in Frameworks */ = {isa = PBXBuildFile; productRef = CE5EF0122C13640900E306B3 /* SwiftImage */; };
 		CE8B92442C12E0FC0025C962 /* Egérie.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CE8B92432C12E0FC0025C962 /* Egérie.mp3 */; };
 		CE8B92472C12E1B40025C962 /* Le horla.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CE8B92462C12E1B40025C962 /* Le horla.mp3 */; };
 		CE8B924A2C12E1BF0025C962 /* Ma dope.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CE8B92492C12E1BF0025C962 /* Ma dope.mp3 */; };
@@ -52,6 +75,8 @@
 		CE8B92762C12E3830025C962 /* Territorial Pissings.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CE8B92752C12E3830025C962 /* Territorial Pissings.mp3 */; };
 		CEB0FEC02BF575B100D44C8E /* AlbumsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB0FEBF2BF575B100D44C8E /* AlbumsView.swift */; };
 		CEC3B0A32BF8F17000FBDE54 /* SongCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC3B0A22BF8F17000FBDE54 /* SongCell.swift */; };
+		CEDA97DC2C18A35D000B577C /* SongsByAlbumView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDA97DB2C18A35D000B577C /* SongsByAlbumView.swift */; };
+		CEED73192C2B30360030A889 /* utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEED73182C2B30360030A889 /* utils.swift */; };
 		CEFADAB62C127EE600BBEA5B /* AudioPlayerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFADAB52C127EE600BBEA5B /* AudioPlayerViewModel.swift */; };
 /* End PBXBuildFile section */
 
@@ -70,6 +95,27 @@
 		CE03CB842BF5201F003F31D6 /* SideMenuItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuItem.swift; sourceTree = "<group>"; };
 		CE03CB872BF521C6003F31D6 /* SideBarViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideBarViews.swift; sourceTree = "<group>"; };
 		CE03CB892BF52349003F31D6 /* Album.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Album.swift; sourceTree = "<group>"; };
+		CE17E1CF2C1E012000BCA39A /* AlbumsByArtistView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumsByArtistView.swift; sourceTree = "<group>"; };
+		CE45305C2C2B889F0099FE5D /* Base */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = Base; path = Base.lproj/merci.mp3; sourceTree = "<group>"; };
+		CE45305F2C2B88A90099FE5D /* Base */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = Base; path = Base.lproj/Papaoutai.mp3; sourceTree = "<group>"; };
+		CE4530622C2B88AE0099FE5D /* Base */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = Base; path = Base.lproj/sommeil.mp3; sourceTree = "<group>"; };
+		CE4530652C2B88B10099FE5D /* Base */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = Base; path = "Base.lproj/Ta Fête.mp3"; sourceTree = "<group>"; };
+		CE4530682C2B88B70099FE5D /* Base */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = Base; path = "Base.lproj/Tous les mêmes.mp3"; sourceTree = "<group>"; };
+		CE45306B2C2B88BC0099FE5D /* Base */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = Base; path = Base.lproj/Aerodynamic.mp3; sourceTree = "<group>"; };
+		CE45306E2C2B88BF0099FE5D /* Base */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = Base; path = "Base.lproj/Digital Love.mp3"; sourceTree = "<group>"; };
+		CE4530712C2B88C60099FE5D /* Base */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = Base; path = "Base.lproj/Harder, Better, Faster, Stronger.mp3"; sourceTree = "<group>"; };
+		CE4530742C2B88C90099FE5D /* Base */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = Base; path = "Base.lproj/One More Time.mp3"; sourceTree = "<group>"; };
+		CE4530772C2B88D00099FE5D /* Base */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = Base; path = "Base.lproj/Veridis Quo.mp3"; sourceTree = "<group>"; };
+		CE45307A2C2B88D30099FE5D /* Base */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = Base; path = Base.lproj/Voyager.mp3; sourceTree = "<group>"; };
+		CE45308B2C2B898F0099FE5D /* Base */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = Base; path = Base.lproj/REPLIC44.mp3; sourceTree = "<group>"; };
+		CE45308E2C2B89920099FE5D /* Base */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = Base; path = "Base.lproj/Le jour de la signature.mp3"; sourceTree = "<group>"; };
+		CE4530912C2B89950099FE5D /* Base */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = Base; path = Base.lproj/STRIP.mp3; sourceTree = "<group>"; };
+		CE4530942C2B899B0099FE5D /* Base */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = Base; path = "Base.lproj/Be My Lady.mp3"; sourceTree = "<group>"; };
+		CE4530972C2B899E0099FE5D /* Base */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = Base; path = "Base.lproj/Get Down On It.mp3"; sourceTree = "<group>"; };
+		CE45309A2C2B89A10099FE5D /* Base */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = Base; path = "Base.lproj/Steppin' Out.mp3"; sourceTree = "<group>"; };
+		CE4530A32C2B89C40099FE5D /* Base */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = Base; path = "Base.lproj/Galatée.mp3"; sourceTree = "<group>"; };
+		CE4530A62C2B89C80099FE5D /* Base */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = Base; path = "Base.lproj/Humanoïde.mp3"; sourceTree = "<group>"; };
+		CE4530A92C2B89CC0099FE5D /* Base */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = Base; path = Base.lproj/Squa.mp3; sourceTree = "<group>"; };
 		CE5EEFD22C12ED7800E306B3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = Base; path = "Base.lproj/Afraid of Love.mp3"; sourceTree = "<group>"; };
 		CE5EEFD52C12ED7C00E306B3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = Base; path = Base.lproj/Africa.mp3; sourceTree = "<group>"; };
 		CE5EEFD82C12ED8000E306B3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = Base; path = Base.lproj/Rosana.mp3; sourceTree = "<group>"; };
@@ -88,6 +134,7 @@
 		CE5EF0052C12FED800E306B3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = Base; path = Base.lproj/PUPPET.mp3; sourceTree = "<group>"; };
 		CE5EF00A2C12FEE000E306B3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = Base; path = "Base.lproj/WHAT'S GOOD.mp3"; sourceTree = "<group>"; };
 		CE5EF00D2C130BB800E306B3 /* VolumeSlider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VolumeSlider.swift; sourceTree = "<group>"; };
+		CE5EF00F2C1353DD00E306B3 /* SongPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongPlayerView.swift; sourceTree = "<group>"; };
 		CE8B92422C12E0FC0025C962 /* Base */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = Base; path = "Base.lproj/Egérie.mp3"; sourceTree = "<group>"; };
 		CE8B92452C12E1B40025C962 /* Base */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = Base; path = "Base.lproj/Le horla.mp3"; sourceTree = "<group>"; };
 		CE8B92482C12E1BF0025C962 /* Base */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = Base; path = "Base.lproj/Ma dope.mp3"; sourceTree = "<group>"; };
@@ -103,6 +150,8 @@
 		CE8B92742C12E3830025C962 /* Base */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = Base; path = "Base.lproj/Territorial Pissings.mp3"; sourceTree = "<group>"; };
 		CEB0FEBF2BF575B100D44C8E /* AlbumsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumsView.swift; sourceTree = "<group>"; };
 		CEC3B0A22BF8F17000FBDE54 /* SongCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongCell.swift; sourceTree = "<group>"; };
+		CEDA97DB2C18A35D000B577C /* SongsByAlbumView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongsByAlbumView.swift; sourceTree = "<group>"; };
+		CEED73182C2B30360030A889 /* utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = utils.swift; sourceTree = "<group>"; };
 		CEFADAB52C127EE600BBEA5B /* AudioPlayerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioPlayerViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -111,6 +160,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE5EF0132C13640900E306B3 /* SwiftImage in Frameworks */,
 				CE03CB732BF51C33003F31D6 /* RealityKitContent in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -121,6 +171,7 @@
 		CE03CB642BF51C33003F31D6 = {
 			isa = PBXGroup;
 			children = (
+				CEED73172C2B30260030A889 /* Utils */,
 				CEFADAB42C127EC200BBEA5B /* ViewModel */,
 				CE3FC3FC2C0FDBF5009F1117 /* AudioPlayer */,
 				CEC3B0A12BF8F15C00FBDE54 /* Components */,
@@ -186,6 +237,9 @@
 				CEB0FEBF2BF575B100D44C8E /* AlbumsView.swift */,
 				CE036F3A2BF5F82500F436E1 /* ArtistsView.swift */,
 				CE036F3E2BF6026000F436E1 /* SongsView.swift */,
+				CE5EF00F2C1353DD00E306B3 /* SongPlayerView.swift */,
+				CEDA97DB2C18A35D000B577C /* SongsByAlbumView.swift */,
+				CE17E1CF2C1E012000BCA39A /* AlbumsByArtistView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -193,6 +247,9 @@
 		CE3FC3FC2C0FDBF5009F1117 /* AudioPlayer */ = {
 			isa = PBXGroup;
 			children = (
+				CE4530842C2B89430099FE5D /* Hologram Lo' */,
+				CE45307D2C2B88E70099FE5D /* Kool & The Gang */,
+				CE45304F2C2B87D90099FE5D /* Stromae */,
 				CE8B92352C12DFD10025C962 /* Toto */,
 				CE8B92342C12DFCB0025C962 /* Michael Jackson */,
 				CE8B92332C12DF280025C962 /* Daft Punk */,
@@ -201,6 +258,38 @@
 				CE8B92302C12DEF80025C962 /* Tyler, The Creator */,
 			);
 			path = AudioPlayer;
+			sourceTree = "<group>";
+		};
+		CE45304F2C2B87D90099FE5D /* Stromae */ = {
+			isa = PBXGroup;
+			children = (
+				CE45305D2C2B889F0099FE5D /* merci.mp3 */,
+				CE4530602C2B88A90099FE5D /* Papaoutai.mp3 */,
+				CE4530632C2B88AE0099FE5D /* sommeil.mp3 */,
+				CE4530662C2B88B10099FE5D /* Ta Fête.mp3 */,
+				CE4530692C2B88B70099FE5D /* Tous les mêmes.mp3 */,
+			);
+			path = Stromae;
+			sourceTree = "<group>";
+		};
+		CE45307D2C2B88E70099FE5D /* Kool & The Gang */ = {
+			isa = PBXGroup;
+			children = (
+				CE4530952C2B899B0099FE5D /* Be My Lady.mp3 */,
+				CE4530982C2B899E0099FE5D /* Get Down On It.mp3 */,
+				CE45309B2C2B89A10099FE5D /* Steppin' Out.mp3 */,
+			);
+			path = "Kool & The Gang";
+			sourceTree = "<group>";
+		};
+		CE4530842C2B89430099FE5D /* Hologram Lo' */ = {
+			isa = PBXGroup;
+			children = (
+				CE45308C2C2B898F0099FE5D /* REPLIC44.mp3 */,
+				CE45308F2C2B89920099FE5D /* Le jour de la signature.mp3 */,
+				CE4530922C2B89950099FE5D /* STRIP.mp3 */,
+			);
+			path = "Hologram Lo'";
 			sourceTree = "<group>";
 		};
 		CE8B92302C12DEF80025C962 /* Tyler, The Creator */ = {
@@ -217,6 +306,9 @@
 		CE8B92312C12DF130025C962 /* Nekfeu */ = {
 			isa = PBXGroup;
 			children = (
+				CE4530A42C2B89C40099FE5D /* Galatée.mp3 */,
+				CE4530A72C2B89C80099FE5D /* Humanoïde.mp3 */,
+				CE4530AA2C2B89CC0099FE5D /* Squa.mp3 */,
 				CE8B92432C12E0FC0025C962 /* Egérie.mp3 */,
 				CE8B92462C12E1B40025C962 /* Le horla.mp3 */,
 				CE8B92492C12E1BF0025C962 /* Ma dope.mp3 */,
@@ -249,6 +341,12 @@
 				CE5EEFF12C12EDA000E306B3 /* Give Life Back to Music.mp3 */,
 				CE5EEFF42C12EDA900E306B3 /* Motherboard.mp3 */,
 				CE5EEFF72C12EDAF00E306B3 /* Within.mp3 */,
+				CE45306C2C2B88BC0099FE5D /* Aerodynamic.mp3 */,
+				CE45306F2C2B88BF0099FE5D /* Digital Love.mp3 */,
+				CE4530722C2B88C60099FE5D /* Harder, Better, Faster, Stronger.mp3 */,
+				CE4530752C2B88C90099FE5D /* One More Time.mp3 */,
+				CE4530782C2B88D00099FE5D /* Veridis Quo.mp3 */,
+				CE45307B2C2B88D30099FE5D /* Voyager.mp3 */,
 			);
 			path = "Daft Punk";
 			sourceTree = "<group>";
@@ -284,6 +382,14 @@
 			path = Components;
 			sourceTree = "<group>";
 		};
+		CEED73172C2B30260030A889 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				CEED73182C2B30360030A889 /* utils.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 		CEFADAB42C127EC200BBEA5B /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
@@ -310,6 +416,7 @@
 			name = visionProMusicApp;
 			packageProductDependencies = (
 				CE03CB722BF51C33003F31D6 /* RealityKitContent */,
+				CE5EF0122C13640900E306B3 /* SwiftImage */,
 			);
 			productName = visionProMusicApp;
 			productReference = CE03CB6D2BF51C33003F31D6 /* visionProMusicApp.app */;
@@ -339,6 +446,9 @@
 				Base,
 			);
 			mainGroup = CE03CB642BF51C33003F31D6;
+			packageReferences = (
+				CE5EF0112C13640900E306B3 /* XCRemoteSwiftPackageReference "swift-image" */,
+			);
 			productRefGroup = CE03CB6E2BF51C33003F31D6 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -356,22 +466,36 @@
 				CE5EF00C2C12FEE000E306B3 /* WHAT'S GOOD.mp3 in Resources */,
 				CE8B92762C12E3830025C962 /* Territorial Pissings.mp3 in Resources */,
 				CE5EEFE02C12ED8800E306B3 /* Billie Jean.mp3 in Resources */,
+				CE4530AB2C2B89CC0099FE5D /* Squa.mp3 in Resources */,
 				CE5EEFE32C12ED8C00E306B3 /* Human Nature.mp3 in Resources */,
 				CE5EEFF82C12EDAF00E306B3 /* Within.mp3 in Resources */,
+				CE4530792C2B88D00099FE5D /* Veridis Quo.mp3 in Resources */,
+				CE4530762C2B88C90099FE5D /* One More Time.mp3 in Resources */,
 				CE5EEFEC2C12ED9700E306B3 /* Beyond.mp3 in Resources */,
+				CE4530702C2B88BF0099FE5D /* Digital Love.mp3 in Resources */,
+				CE4530A82C2B89C80099FE5D /* Humanoïde.mp3 in Resources */,
+				CE4530992C2B899E0099FE5D /* Get Down On It.mp3 in Resources */,
+				CE4530902C2B89920099FE5D /* Le jour de la signature.mp3 in Resources */,
+				CE4530642C2B88AE0099FE5D /* sommeil.mp3 in Resources */,
 				CE5EEFD72C12ED7C00E306B3 /* Africa.mp3 in Resources */,
 				CE8B92532C12E1C90025C962 /* Tempête.mp3 in Resources */,
+				CE45308D2C2B898F0099FE5D /* REPLIC44.mp3 in Resources */,
 				CE5EEFE92C12ED9300E306B3 /* Thriller.mp3 in Resources */,
 				CE8B924D2C12E1C30025C962 /* Martin Eden.mp3 in Resources */,
 				CE8B92672C12E3690025C962 /* Come As You Are.mp3 in Resources */,
+				CE4530932C2B89950099FE5D /* STRIP.mp3 in Resources */,
 				CE5EEFDD2C12ED8300E306B3 /* Beat It.mp3 in Resources */,
 				CE8B92442C12E0FC0025C962 /* Egérie.mp3 in Resources */,
+				CE45306D2C2B88BC0099FE5D /* Aerodynamic.mp3 in Resources */,
+				CE45307C2C2B88D30099FE5D /* Voyager.mp3 in Resources */,
 				CE5EEFF52C12EDA900E306B3 /* Motherboard.mp3 in Resources */,
 				CE8B92702C12E37B0025C962 /* Lounge Act.mp3 in Resources */,
+				CE45305E2C2B889F0099FE5D /* merci.mp3 in Resources */,
 				CE03CB7C2BF51C35003F31D6 /* Preview Assets.xcassets in Resources */,
 				CE5EEFFD2C12FEC200E306B3 /* NEW MAGIC WAND.mp3 in Resources */,
 				CE03CB792BF51C35003F31D6 /* Assets.xcassets in Resources */,
 				CE5EF0072C12FED800E306B3 /* PUPPET.mp3 in Resources */,
+				CE4530672C2B88B10099FE5D /* Ta Fête.mp3 in Resources */,
 				CE5EF0022C12FECB00E306B3 /* IGOR'S THEME.mp3 in Resources */,
 				CE5EEFF22C12EDA000E306B3 /* Give Life Back to Music.mp3 in Resources */,
 				CE5EEFDA2C12ED8000E306B3 /* Rosana.mp3 in Resources */,
@@ -379,12 +503,18 @@
 				CE8B926A2C12E3700025C962 /* Drain You.mp3 in Resources */,
 				CE8B92732C12E37F0025C962 /* Smells Like Teen Spirit.mp3 in Resources */,
 				CE8B92472C12E1B40025C962 /* Le horla.mp3 in Resources */,
+				CE4530A52C2B89C40099FE5D /* Galatée.mp3 in Resources */,
+				CE45306A2C2B88B70099FE5D /* Tous les mêmes.mp3 in Resources */,
 				CE8B92642C12E3650025C962 /* Breed.mp3 in Resources */,
+				CE4530612C2B88A90099FE5D /* Papaoutai.mp3 in Resources */,
 				CE5EEFEF2C12ED9C00E306B3 /* Get Lucky.mp3 in Resources */,
 				CE8B926D2C12E3750025C962 /* Lithium.mp3 in Resources */,
 				CE5EEFE62C12ED8F00E306B3 /* P.Y.T. (Pretty Young Thing).mp3 in Resources */,
 				CE8B92502C12E1C60025C962 /* Princesse.mp3 in Resources */,
+				CE45309C2C2B89A10099FE5D /* Steppin' Out.mp3 in Resources */,
+				CE4530732C2B88C60099FE5D /* Harder, Better, Faster, Stronger.mp3 in Resources */,
 				CE8B924A2C12E1BF0025C962 /* Ma dope.mp3 in Resources */,
+				CE4530962C2B899B0099FE5D /* Be My Lady.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -399,21 +529,185 @@
 				CEC3B0A32BF8F17000FBDE54 /* SongCell.swift in Sources */,
 				CE036F3B2BF5F82500F436E1 /* ArtistsView.swift in Sources */,
 				CE03CB882BF521C6003F31D6 /* SideBarViews.swift in Sources */,
+				CE17E1D02C1E012000BCA39A /* AlbumsByArtistView.swift in Sources */,
 				CEFADAB62C127EE600BBEA5B /* AudioPlayerViewModel.swift in Sources */,
 				CE5EF00E2C130BB800E306B3 /* VolumeSlider.swift in Sources */,
+				CEDA97DC2C18A35D000B577C /* SongsByAlbumView.swift in Sources */,
 				CEB0FEC02BF575B100D44C8E /* AlbumsView.swift in Sources */,
 				CE036F412BF6029700F436E1 /* Song.swift in Sources */,
+				CE5EF0102C1353DD00E306B3 /* SongPlayerView.swift in Sources */,
 				CE036F3F2BF6026000F436E1 /* SongsView.swift in Sources */,
 				CE03CB752BF51C33003F31D6 /* visionProMusicAppApp.swift in Sources */,
 				CE03CB852BF5201F003F31D6 /* SideMenuItem.swift in Sources */,
 				CE036F3D2BF5FC8000F436E1 /* Artist.swift in Sources */,
 				CE03CB8A2BF52349003F31D6 /* Album.swift in Sources */,
+				CEED73192C2B30360030A889 /* utils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		CE45305D2C2B889F0099FE5D /* merci.mp3 */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CE45305C2C2B889F0099FE5D /* Base */,
+			);
+			name = merci.mp3;
+			sourceTree = "<group>";
+		};
+		CE4530602C2B88A90099FE5D /* Papaoutai.mp3 */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CE45305F2C2B88A90099FE5D /* Base */,
+			);
+			name = Papaoutai.mp3;
+			sourceTree = "<group>";
+		};
+		CE4530632C2B88AE0099FE5D /* sommeil.mp3 */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CE4530622C2B88AE0099FE5D /* Base */,
+			);
+			name = sommeil.mp3;
+			sourceTree = "<group>";
+		};
+		CE4530662C2B88B10099FE5D /* Ta Fête.mp3 */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CE4530652C2B88B10099FE5D /* Base */,
+			);
+			name = "Ta Fête.mp3";
+			sourceTree = "<group>";
+		};
+		CE4530692C2B88B70099FE5D /* Tous les mêmes.mp3 */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CE4530682C2B88B70099FE5D /* Base */,
+			);
+			name = "Tous les mêmes.mp3";
+			sourceTree = "<group>";
+		};
+		CE45306C2C2B88BC0099FE5D /* Aerodynamic.mp3 */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CE45306B2C2B88BC0099FE5D /* Base */,
+			);
+			name = Aerodynamic.mp3;
+			sourceTree = "<group>";
+		};
+		CE45306F2C2B88BF0099FE5D /* Digital Love.mp3 */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CE45306E2C2B88BF0099FE5D /* Base */,
+			);
+			name = "Digital Love.mp3";
+			sourceTree = "<group>";
+		};
+		CE4530722C2B88C60099FE5D /* Harder, Better, Faster, Stronger.mp3 */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CE4530712C2B88C60099FE5D /* Base */,
+			);
+			name = "Harder, Better, Faster, Stronger.mp3";
+			sourceTree = "<group>";
+		};
+		CE4530752C2B88C90099FE5D /* One More Time.mp3 */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CE4530742C2B88C90099FE5D /* Base */,
+			);
+			name = "One More Time.mp3";
+			sourceTree = "<group>";
+		};
+		CE4530782C2B88D00099FE5D /* Veridis Quo.mp3 */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CE4530772C2B88D00099FE5D /* Base */,
+			);
+			name = "Veridis Quo.mp3";
+			sourceTree = "<group>";
+		};
+		CE45307B2C2B88D30099FE5D /* Voyager.mp3 */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CE45307A2C2B88D30099FE5D /* Base */,
+			);
+			name = Voyager.mp3;
+			sourceTree = "<group>";
+		};
+		CE45308C2C2B898F0099FE5D /* REPLIC44.mp3 */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CE45308B2C2B898F0099FE5D /* Base */,
+			);
+			name = REPLIC44.mp3;
+			sourceTree = "<group>";
+		};
+		CE45308F2C2B89920099FE5D /* Le jour de la signature.mp3 */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CE45308E2C2B89920099FE5D /* Base */,
+			);
+			name = "Le jour de la signature.mp3";
+			sourceTree = "<group>";
+		};
+		CE4530922C2B89950099FE5D /* STRIP.mp3 */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CE4530912C2B89950099FE5D /* Base */,
+			);
+			name = STRIP.mp3;
+			sourceTree = "<group>";
+		};
+		CE4530952C2B899B0099FE5D /* Be My Lady.mp3 */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CE4530942C2B899B0099FE5D /* Base */,
+			);
+			name = "Be My Lady.mp3";
+			sourceTree = "<group>";
+		};
+		CE4530982C2B899E0099FE5D /* Get Down On It.mp3 */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CE4530972C2B899E0099FE5D /* Base */,
+			);
+			name = "Get Down On It.mp3";
+			sourceTree = "<group>";
+		};
+		CE45309B2C2B89A10099FE5D /* Steppin' Out.mp3 */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CE45309A2C2B89A10099FE5D /* Base */,
+			);
+			name = "Steppin' Out.mp3";
+			sourceTree = "<group>";
+		};
+		CE4530A42C2B89C40099FE5D /* Galatée.mp3 */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CE4530A32C2B89C40099FE5D /* Base */,
+			);
+			name = "Galatée.mp3";
+			sourceTree = "<group>";
+		};
+		CE4530A72C2B89C80099FE5D /* Humanoïde.mp3 */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CE4530A62C2B89C80099FE5D /* Base */,
+			);
+			name = "Humanoïde.mp3";
+			sourceTree = "<group>";
+		};
+		CE4530AA2C2B89CC0099FE5D /* Squa.mp3 */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CE4530A92C2B89CC0099FE5D /* Base */,
+			);
+			name = Squa.mp3;
+			sourceTree = "<group>";
+		};
 		CE5EEFD32C12ED7800E306B3 /* Afraid of Love.mp3 */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -851,10 +1145,26 @@
 		};
 /* End XCConfigurationList section */
 
+/* Begin XCRemoteSwiftPackageReference section */
+		CE5EF0112C13640900E306B3 /* XCRemoteSwiftPackageReference "swift-image" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/koher/swift-image";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.7.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
 /* Begin XCSwiftPackageProductDependency section */
 		CE03CB722BF51C33003F31D6 /* RealityKitContent */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = RealityKitContent;
+		};
+		CE5EF0122C13640900E306B3 /* SwiftImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CE5EF0112C13640900E306B3 /* XCRemoteSwiftPackageReference "swift-image" */;
+			productName = SwiftImage;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
