@@ -85,7 +85,7 @@ struct ContentView: View {
                     VolumeSlider(
                             sliderProgress: $volume,
                             symbol: .init(
-                                icon: "airpodspro",
+                                icon: "speaker.wave.3.fill",
                                 tint: .gray,
                                 font: .system(size: 15),
                                 padding: 20
