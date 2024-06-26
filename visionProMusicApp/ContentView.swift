@@ -71,7 +71,7 @@ struct ContentView: View {
                     }) {
                         PlayingSongCardView()
                     }.sheet(isPresented: $isShowingSheet, content: {
-                        Text("Hello")
+                        SongPlayerView(isShowingSheet: $isShowingSheet)
                     })
                     
                     Button {} label: {

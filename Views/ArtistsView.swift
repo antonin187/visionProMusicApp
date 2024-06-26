@@ -9,6 +9,9 @@ import SwiftUI
 
 struct ArtistsView: View {
     @State private var searchText: String = ""
+    @State var isPresentedSheet = false
+    @EnvironmentObject var audioPlayerViewModel: AudioPlayerViewModel
+    
     let columns: [GridItem] = [GridItem(.adaptive(minimum: 160, maximum: 200))]
     var body: some View {
         ScrollView {
@@ -18,7 +21,10 @@ struct ArtistsView: View {
             
             LazyVGrid(columns: columns, spacing: 24) {
                 ForEach(artists) { artist in
-                    Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/) {
+                    Button(action: {
+                        audioPlayerViewModel.setSelectedArtist(artist: artist)
+                        isPresentedSheet = true
+                    }) {
                         VStack (alignment: .center) {
                             AsyncImage(url: URL(string: artist.image ?? "")) { image in
                                 image.resizable()
@@ -35,6 +41,9 @@ struct ArtistsView: View {
                         }
                         .hoverEffect()
                     }.buttonStyle(.plain)
+                        .sheet(isPresented: $isPresentedSheet) {
+                            AlbumsByArtistView(isPresentedSheet: $isPresentedSheet)
+                        }
                 }
             }
         }.padding(.horizontal, 24)

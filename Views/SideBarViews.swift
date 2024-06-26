@@ -29,7 +29,7 @@ struct SideBarView: View {
                 case "Made For You":
                     Text("Made For You")
                 default:
-                    Text("Recently Added")
+                    Text("Coming Soon!")
                     
                 }
             }
